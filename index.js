@@ -25,11 +25,20 @@
 var numIdenticalPairs = function(nums) {
     let i = 0;
     let result = 0;
-    nums.forEach(num => {
-        if(num == num[i + 1]){
+    let number = nums[0];
+    
+    while(number != nums.length - 1){
+        
+        nums.forEach(num => {
+        if(number == num[i + 1]){
             result ++
     }
       i++  
+      
     })
+        number++
+          }
+
+    
     return result
 };
