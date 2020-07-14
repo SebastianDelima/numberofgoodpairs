@@ -23,5 +23,13 @@
 // Output: 0
 
 var numIdenticalPairs = function(nums) {
-            
+    let i = 0;
+    let result = 0;
+    nums.forEach(num => {
+        if(num == num[i + 1]){
+            result ++
+    }
+      i++  
+    })
+    return result
 };
